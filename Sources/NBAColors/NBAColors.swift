@@ -2,10 +2,18 @@ struct NBAColors {
     var text = "Hello, World!"
 }
 
+func Logo(_ name: String) -> Image {
+    return Image(name, bundle: Bundle.module)
+}
+
 import SwiftUI
 struct NBAColorsView: View {
     var body: some View {
-        Text("NBAColors")
+        VStack {
+            Text("Bulls")
+                .foregroundColor(.bullsRed)
+            Logo("Chicago Bulls logo")
+        }
     }
 }
 
