@@ -10,9 +10,59 @@ import SwiftUI
 struct NBAColorsView: View {
     var body: some View {
         VStack {
-            Text("Bulls")
-                .foregroundColor(.bullsRed)
-            Logo("Chicago Bulls logo")
+            
+            HStack(spacing: 20) {
+                
+                VStack {
+                    Logo("Chicago Bulls logo")
+                        .frame(width: 710, height: 1000)
+                        .background(Color.bullsRed)
+                }
+                .padding()
+
+                VStack {
+                    VStack(alignment: .leading, spacing: 260) {
+                        Rectangle()
+                            .fill(Color.bullsRed)
+                            .frame(width: 550, height: 550)
+                            .padding(.top, 30.0)
+                            Text("Bulls Red")
+                                .fontWeight(.heavy)
+                                .foregroundColor(.black)
+                                .italic()
+                                .font(.title)
+                                .padding()
+
+                    }
+                    .frame(width: 620)
+                    .background(Color.white)
+                }
+                .frame(width: 710, height: 1000)
+                .background(Color.bullsRed)
+                
+                VStack {
+                    VStack(alignment: .leading, spacing: 260) {
+                        Rectangle()
+                            .fill(Color.bullsBlack)
+                            .frame(width: 550, height: 550)
+                            .padding(.top, 30.0)
+                            Text("Bulls Black")
+                                .fontWeight(.heavy)
+                                .foregroundColor(.black)
+                                .italic()
+                                .font(.title)
+                                .padding()
+
+                    }
+                    .frame(width: 620)
+                    .background(Color.white)
+                }
+                .frame(width: 710, height: 1000)
+                .background(Color.bullsBlack)
+                
+            }
+            .background(Color.gray)
+            
         }
     }
 }
