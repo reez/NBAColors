@@ -4,7 +4,7 @@ The colors and logos of every NBA team.
 
 ## Inspiration
 
-Based on [NBA Colors](https://www.figma.com/community/file/883377729882264224/NBA-Colors) from the Figma Community member [Toni Gemayel](https://github.com/Tgemayel).
+Based on [NBA Colors](https://www.figma.com/community/file/883377729882264224/NBA-Colors) from Figma Community member [Toni Gemayel](https://github.com/Tgemayel).
 
 <p align='left'>
 <a href='https://matthewramsden.com'>
@@ -53,7 +53,7 @@ If you want to use NBAColors in any other project that uses [SwiftPM](https://sw
 
 ```swift
 dependencies: [
-  .package(name: "NBAColors", url: "https://github.com/reez/NBAColors.git", from: "0.1"),
+  .package(name: "NBAColors", url: "https://github.com/reez/NBAColors.git", from: "0.1.1"),
 ]
 ```
 
