@@ -35,7 +35,7 @@ let color = Color.bullsRed
 
 <p align='left'>
 <a href='https://matthewramsden.com'>
-<img src='https://raw.githubusercontent.com/reez/NBAColors/master/Sources/NBAColors/playground.png' height='500' alt='screenshot' />
+<img src='https://raw.githubusercontent.com/reez/NBAColors/master/Sources/NBAColors/playground.png'  alt='screenshot' />
 </a>
 </p>
 
