@@ -2,7 +2,7 @@ struct NBAColors {
     var text = "Hello, World!"
 }
 
-func Logo(_ name: String) -> Image {
+public func Logo(_ name: String) -> Image {
     return Image(name, bundle: Bundle.module)
 }
 
@@ -73,7 +73,7 @@ struct NBAColors_Previews: PreviewProvider {
     }
 }
 
-extension Color {
+public extension Color {
     static let hawksCharcoal: Color = Color(#colorLiteral(red: 0.14901961386203766, green: 0.1568627506494522, blue: 0.16470588743686676, alpha: 1))
     static let hawksRed: Color = Color(#colorLiteral(red: 0.8784313797950745, green: 0.22745098173618317, blue: 0.24313725531101227, alpha: 1))
     static let hawksVoltGreen: Color = Color(#colorLiteral(red: 0.7568627595901489, green: 0.8274509906768799, blue: 0.18431372940540314, alpha: 1))
