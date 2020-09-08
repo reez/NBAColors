@@ -1,6 +1,5 @@
-import XCTest
-
 import NBAColorsTests
+import XCTest
 
 var tests = [XCTestCaseEntry]()
 tests += NBAColorsTests.allTests()
