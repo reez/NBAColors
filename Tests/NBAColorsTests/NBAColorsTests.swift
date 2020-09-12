@@ -1,9 +1,7 @@
-import SwiftUI
 import XCTest
-
 @testable import NBAColors
+import SwiftUI
 import SnapshotTesting
-
 final class NBAColorsTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
@@ -17,6 +15,12 @@ final class NBAColorsTests: XCTestCase {
 
     }
     
+
+
+    static var allTests = [
+        ("testExample", testExample)
+    ]
+    
     func testSnapshot() {
         assertSnapshot(
             matching: NBAColors_Previews.previews,
@@ -27,8 +31,5 @@ final class NBAColorsTests: XCTestCase {
             named: "device"
         )
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+    
 }
