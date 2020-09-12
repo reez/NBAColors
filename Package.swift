@@ -29,6 +29,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "NBAColorsTests",
-            dependencies: ["NBAColors"]),
+            dependencies: ["NBAColors", "SnapshotTesting"]),
     ]
 )
