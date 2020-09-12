@@ -1,6 +1,7 @@
-import XCTest
-@testable import NBAColors
 import SwiftUI
+import XCTest
+
+@testable import NBAColors
 import SnapshotTesting
 
 final class NBAColorsTests: XCTestCase {
