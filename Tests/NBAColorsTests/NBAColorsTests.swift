@@ -2,6 +2,8 @@ import SwiftUI
 import XCTest
 
 @testable import NBAColors
+import SwiftUI
+import SnapshotTesting
 
 final class NBAColorsTests: XCTestCase {
     func testExample() {
@@ -15,8 +17,22 @@ final class NBAColorsTests: XCTestCase {
         //XCTAssertEqual(Logo("Chicago Bulls logo"), Logo("Chicago Bulls logo"))
 
     }
+    
+
 
     static var allTests = [
         ("testExample", testExample)
     ]
+    
+    func testSnapshot() {
+        assertSnapshot(
+            matching: NBAColors_Previews.previews,
+            as: .image(
+                layout: .device(config: .iPhoneXsMax),
+                traits: .init(userInterfaceStyle: .light)
+            ),
+            named: "device"
+        )
+    }
+    
 }
